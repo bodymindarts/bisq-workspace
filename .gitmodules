@@ -1,0 +1,3 @@
+[submodule "src/bisq"]
+	path = src/bisq
+	url = https://github.com/bisq-network/bisq.git
