@@ -6,7 +6,7 @@ blocknotify_script=${1?Please provide blocknotify script}
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 BITCOIN_DIR="${DIR}/.bitcoin"
 BITCOIN_CONF="${BITCOIN_DIR}/bitcoin.conf"
-BITCOIN_RPC_PORT=18322
+BITCOIN_RPC_PORT=18443
 
 if ps aux | grep bitcoin | grep daemon >/dev/null; then
   echo "Killing running daemon"
