@@ -7,6 +7,9 @@ stop-bitcoind:
 build:
 	cd src/bisq && ./gradlew build
 
+daemon:
+	src/bisq/bisq-daemon --appName=Bisq-throwaway --daoActivated=false
+
 mainnet-seednode:
 	src/bisq/bisq-seednode --baseCurrencyNetwork=BTC_MAINNET  --nodePort=5005 --appName=bisq-BTC_MAINNET_Seed_5005 --logLevel=info
 
